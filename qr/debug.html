@@ -6,11 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>debug</title>
-    <link rel="stylesheet" href="css/debug.css">
-    <link rel="apple-touch-icon" sizes="180x180" href="favicon/mi/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon/mi/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon/mi/favicon-16x16.png">
-    <link rel="shortcut icon" href="favicon/mi/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="/qr/css/debug.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="/qr/favicon/mi/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/qr/favicon/mi/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/qr/favicon/mi/favicon-16x16.png">
+    <link rel="shortcut icon" href="/qr/favicon/mi/favicon.ico" type="image/x-icon">
 </head>
 
 <body>
@@ -20,7 +20,7 @@
     <p>published near <i>37°32'10.8"N 127°00'12.6"E</i></p>
     <h2>multicast servers for this microsite</h2>
     <h3>maximum speed: <span id="speed"></span></h3>
-    <p id="mayVary">may vary with network traffic - updated every refresh</p>
+    <p class="mayVary">may vary with network traffic - updated every refresh</p>
     <ul>
         <li>hannam - <span class="online">online</span></li>
         <li>
@@ -40,12 +40,32 @@
             </ul>
         </li>
     </ul>
+    <h2>radial communication</h2>
+    <p class="mayVary">ground-level servers may relay requests to high-frequency towers</p>
+    <ul>
+        <li>in use - <span class="offline">no</span></li>
+        <li>
+            <ul>
+                <li>radio channel - <span class="offline">none</span></li>
+            </ul>
+        </li>
+        <li>MI - <span class="online">online</span></li>
+        <li>
+            <ul>
+                <li>dade (public)  - <span class="online">up</span></li>
+                <li>nautical [US East] (public)  - <span class="online">up</span></li>
+                <li><span class="restricted">+2,082 access-restricted radio towers</span> <span class="offline">(not linked
+                        with site)</span></li>
+            </ul>
+        </li>
+    </ul>
     <h2>site proxy</h2>
     <ul>
         <li>status <span class="true">up</span></li>
         <li>provider <span style="color: gray;">MI</span></li>
         <li>location <span style="color: gray;">Hannam</span></li>
     </ul>
+    <a href="/qr" id="goBack">← go back</a>
 </body>
 <script src="js/serverSpeeds.js"></script>
 <script src="https://getinsights.io/js/insights.js"></script>
